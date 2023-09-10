@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Run below step one by one in terminal
+
+docker build -t kf_finance .
+
+docker run -it -p 8888:8888 -v /home/beastan/Documents/blogs_code/kalman_filtering_finance:/home/jovyan/work kf_finance
+
