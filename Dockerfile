@@ -1,8 +1,8 @@
-FROM jupyter/minimal-notebook
+FROM jupyter/base-notebook:python-3.7.4
 
 RUN pip install --upgrade pip
 
-RUN pip install tensorflow==2.12.0
+RUN pip install pykalman
 
 RUN pip install numpy
 
